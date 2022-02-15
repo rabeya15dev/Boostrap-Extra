@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=
+  , initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    h1::before {
+      content: 'Hello';
+      color: yellow;
+    }
+
+    h1::after {
+      content: 'UPo';
+      color: brown;
+    }
+
+    blockquote::before {
+      content: open-quote;
+      color: brown;
+      font-size: 1.5em;
+    }
+
+    blockquote::after {
+      content: close-quote;
+      color: brown;
+      font-size: 1.5em;
+    }
+
+    .section-title {
+      display: inline-block;
+    }
+
+    .section-title::after,
+    .section-title:hover::before {
+      content: '';
+      display: block;
+      background-color: chartreuse;
+      height: 2px;
+      width: 100%;
+
+
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Having fun with Pesudo </h1>
+
+  <section>
+    <h2 class="section-title">Best Quotes</h2>
+    <blockquote>sum of all parts of your actions</blockquote>
+
+
+    <blockquote>Set your mind on a definite goal and observe how quickly the world stands aside to let you pass
+    </blockquote>
+
+
+    <blockquote>Happiness is found in doing, not merely possessing</blockquote>
+
+  </section>
+</body>
+
+</html>
